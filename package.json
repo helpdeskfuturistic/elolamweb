@@ -1,12 +1,18 @@
 {
-  "name": "website-fj-workspace",
+  "name": "elolamweb",
   "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "foodlink",
+    "lib/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@workspace/foodlink",
+    "dev": "npm run dev --workspace=@workspace/foodlink",
+    "typecheck": "npm run typecheck --workspace=@workspace/foodlink"
+  },
   "devDependencies": {
-    "@esbuild/win32-x64": "0.27.3",
-    "@rollup/rollup-win32-x64-msvc": "^4.62.3",
-    "@tailwindcss/oxide-win32-x64-msvc": "^4.3.3",
-    "lightningcss-win32-x64-msvc": "^1.33.0",
-    "typescript": "~5.9.3"
+    "typescript": "~5.9.3",
+    "wrangler": "^4.40.0"
   }
 }
