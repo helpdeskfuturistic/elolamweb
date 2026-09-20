@@ -12,7 +12,6 @@
     "typecheck": "npm run typecheck --workspace=@workspace/foodlink"
   },
   "devDependencies": {
-    "typescript": "~5.9.3",
-    "wrangler": "^4.40.0"
+    "typescript": "~5.9.3"
   }
 }
